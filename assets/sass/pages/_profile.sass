@@ -1,0 +1,540 @@
+//LK-PROFILE
+.lk-profile-user
+    margin-bottom: 35px
+
+.lk-profile-user__personal-item + .lk-profile-user__personal-item
+    margin-top: 20px
+
+.lk-profile-user__header
+    display: flex
+    align-items: center
+    margin-bottom: 5px
+
+    h2
+        font-size: 21px
+        font-weight: 600
+
+    div
+        margin-left: 20px
+
+        span
+            font-size: 15px
+            font-weight: 400
+            color: $blue
+            border-bottom: 1px solid $blue
+            cursor: pointer
+
+.lk-profile-user__img
+    height: 100%
+    min-height: 200px
+    position: relative
+
+    img
+        max-width: 100%
+
+    &.no-img-placeholder
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid #c7ccd6
+        border-radius: 3px
+        padding: 15px 30px
+
+.lk-profile-user__avatar__delete
+    cursor: pointer
+    position: absolute
+    top: 8px
+    right: 8px
+    background: rgba(#fff, 0.4)
+    width: 16px
+    height: 16px
+
+    .delete
+        top: 3px
+        right: 3px
+
+.img-empty-bg
+    width: 50px
+    height: 44px
+    margin-bottom: 13px
+    margin-left: auto
+    margin-right: auto
+    background-size: cover
+    background-position: center
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI0MyIgdmlld0JveD0iMCAwIDUwIDQzIj4gIDxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICNjN2NjZDY7ICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPHBhdGggaWQ9IkZvcm1hXzFf0LrQvtC/0LjRj18yIiBkYXRhLW5hbWU9IkZvcm1hIDEg0LrQvtC/0LjRjyAyIiBjbGFzcz0iY2xzLTEiIGQ9Ik01ODguOTcyLDY0OC43ODljLTEuMy0xLjM2OC0yLjMtMS40NjgtNC4xMzctMS40NjhoLTYuMDg4bC0xLjYzLTQuMzA2QTQuOTU0LDQuOTU0LDAsMCwwLDU3NS4wOTQsNjQxYy0wLjgxMy4wNjQtMi43MzQsMC0zLjY1MywwSDU1Ni44MjlhNC45NDksNC45NDksMCwwLDAtMi4wMjEsMi4wMTlsLTEuNjMyLDQuMzA2aC02LjA4OGMtMS44MzgsMC0yLjgzNy4xLTQuMTM3LDEuNDY4YTYuOTM1LDYuOTM1LDAsMCwwLTEuOTUsNC45NTR2MjMuOTM5YzAsMS45MzQtLjA4MiwzLjY5MSwxLjIxNyw1LjA2czQuMjUxLDEuMjY1LDYuMDg5LDEuMjY1aDM1LjMxMmMxLjgzNywwLDQuNzg4LjEsNi4wODgtMS4yNjVzMS4yMTgtMy4xMjYsMS4yMTgtNS4wNmwwLTIzLjkzOUE2LjkzNSw2LjkzNSwwLDAsMCw1ODguOTcyLDY0OC43ODlabS0xNC43ODEsMjUuODc5YTExLjIwNywxMS4yMDcsMCwwLDEtMTYuNDU4LDAsMTIuNjgzLDEyLjY4MywwLDAsMSwwLTE3LjMyNSwxMS4yMDcsMTEuMjA3LDAsMCwxLDE2LjQ1OCwwQTEyLjY4MywxMi42ODMsMCwwLDEsNTc0LjE5MSw2NzQuNjY4Wm0tOC4yMjktMTYuNTQ2YTcuMDM1LDcuMDM1LDAsMCwwLTUuMjkxLDIuMzE0LDguMTU4LDguMTU4LDAsMCwwLDAsMTEuMTM5LDcuMjEsNy4yMSwwLDAsMCwxMC41ODIsMCw4LjE1OCw4LjE1OCwwLDAsMCwwLTExLjEzOUE3LjAzOCw3LjAzOCwwLDAsMCw1NjUuOTYyLDY1OC4xMjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTQxIC02NDEpIi8+PC9zdmc+)
+
+.img-empty
+    text-align: center
+    margin: 0 auto
+
+.img-empty-text
+    color: #6c6c6c
+    font-size: 14px
+    font-weight: 400
+
+    span
+        color: $blue
+        cursor: pointer
+        border-bottom: 1px solid $blue
+
+.lk-profile-user-item
+    display: flex
+    align-items: center
+    padding: 13px 25px 13px 0
+    border-bottom: 1px solid #e9ebef
+    position: relative
+
+.lk-profile-user-item__edit
+    position: absolute
+    top: 50%
+    margin-top: -10px
+    right: 0
+    display: flex
+    cursor: pointer
+
+    svg
+        display: flex
+
+.lk-profile-user-item__title
+    font-weight: 600
+    font-size: 15px
+    flex: 0 0 45%
+    padding-right: 15px
+
+.lk-profile-user-item__text
+    color: #505050
+    font-weight: 400
+    font-size: 15px
+    padding-right: 15px
+
+.lk-profile-user-item__social
+    display: flex
+    align-items: center
+
+.lk-profile-user-item__social-item
+    display: flex
+
+.lk-profile-user-item__social-item + .lk-profile-user-item__social-item
+    margin-left: 10px
+
+.lk-profile-user-item__social-item-add
+    cursor: pointer
+
+.lk-profile-payers
+    margin-bottom: 30px
+
+.lk-profile-payers__header
+    h2
+        font-size: 21px
+        font-weight: 600
+
+.lk-profile-payers__content
+    margin-top: 20px
+
+.lk-profile-payers-form__title
+    font-size: 22px
+    font-weight: 600
+    text-align: center
+    margin-bottom: 20px
+
+.lk-profile-payers-item
+    border: 1px solid #c7ccd6
+    border-radius: 3px
+    padding: 25px 15px
+    position: relative
+    margin-bottom: 30px
+
+    &:last-child
+        margin-bottom: 0
+
+.lk-profile-payers-item__edit
+    position: absolute
+    top: -15px
+    background: #fff
+    padding: 0 6px
+    right: 25px
+
+    span
+        cursor: pointer
+        color: $blue
+        font-size: 15px
+        font-weight: 400
+        border-bottom: 1px solid $blue
+
+.lk-profile-payers-item__el
+    font-size: 15px
+    font-weight: 400
+    margin-bottom: 10px
+
+    &:last-child
+        margin-bottom: 0
+
+    &.title
+        font-size: 16px
+        font-weight: 600
+
+.lk-profile-payers__new
+    margin-top: 30px
+
+.lk-profile-payers__new-btn
+    width: 300px
+    max-width: 100%
+    cursor: pointer
+    border-radius: 3px
+    color: $blue
+    font-size: 18px
+    font-weight: 600
+    padding: 30px 30px 30px 100px
+    background-color: #e8ecf4
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1OCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDU4IDY0Ij4gIDxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICNhMmI2ZDQ7ICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPHBhdGggaWQ9Il8xIiBkYXRhLW5hbWU9IjEiIGNsYXNzPSJjbHMtMSIgZD0iTTUyMS4xMDYsMTUzNy4wM2E5Ljk4NSw5Ljk4NSwwLDEsMCw5Ljg5NCw5Ljk4QTkuOTI5LDkuOTI5LDAsMCwwLDUyMS4xMDYsMTUzNy4wM1ptNC44MzcsMTEuMzNoLTMuNDg5djMuNTJINTE5Ljc3di0zLjUyaC0zLjQ4OHYtMi43MWgzLjQ4OHYtMy41MmgyLjY4NHYzLjUyaDMuNDg5djIuNzFabS0xNi45NzUtMzguNzZhMTEuMDc1LDExLjA3NSwwLDAsMCwuNDQxLTEuNjVjMS43MTItMTAuMzUtMy4zNDUtMTAuNzEtMy4zNDUtMTAuNzFhNy44NDgsNy44NDgsMCwwLDAtMy4wNDgtMi44NiwxMC4xMjgsMTAuMTI4LDAsMCwwLTYuMjUtMS4zMyw4Ljc3NCw4Ljc3NCwwLDAsMC0yLjQ5LjQ4LDExLjI3MywxMS4yNzMsMCwwLDAtMi43MzYsMS40MSwxNC42OTQsMTQuNjk0LDAsMCwwLTIuODE0LDIuMzYsMTEuNSwxMS41LDAsMCwwLTMuMDQ3LDUuMzksMTEuODEzLDExLjgxMywwLDAsMCwuMDI2LDUuMjYsMTEuMDcsMTEuMDcsMCwwLDAsLjQ0LDEuNjVjLTEuMDExLS4wOS0yLjIuNS0xLjA3Niw0LjQ5LDAuNzkxLDIuOTMsMS41NTYsMy43NCwyLjE0LDMuNzksMC41MzIsMy40OSwzLjE5LDcuOSw3LjU2LDkuNDVhOC4xNjQsOC4xNjQsMCwwLDAsNS41MzctLjAxLDEyLjU2LDEyLjU2LDAsMCwwLDcuNTczLTkuNDRjMC41ODQtLjA1LDEuMzM2LTAuODYsMi4xNjYtMy43OUM1MTEuMTYsMTUxMC4wOSw1MDkuOTgsMTUwOS41LDUwOC45NjgsMTUwOS42Wm0xMS40ODksMjMuOTFhNS4zODcsNS4zODcsMCwwLDAtMy4wNzMtMi4wMywzOC4xNjIsMzguMTYyLDAsMCwxLTExLjE1Mi01LjEzbC0zLjksMTIuNDUtMC43MzksMi4zNC0wLjAxMy0uMDMtMC42MzYsMS45OS0yLjA0OC01Ljg5YzUuMDU3LTcuMTItMS4wMjUtNy4wNC0xLjM2Mi03LjA0cy02LjQxOS0uMDgtMS4zNjIsNy4wNGwtMi4wNjEsNS44OS0wLjYzNi0xLjk5LTAuMDEzLjAzLTAuNzM5LTIuMzQtMy45LTEyLjQ1YTM3Ljk1OSwzNy45NTksMCwwLDEtMTEuMTUyLDUuMTNjLTQuNTkxLDEuMTgtNC44MTEsNi41Mi00LjYxNyw5LjE2LDAuMDI2LDAsLjI4NiwzLjU5LjU1OCw1LjE2LDAsMCw4Ljk0OCw1Ljg3LDIzLjkzOCw1Ljg3YTU0Ljg3Myw1NC44NzMsMCwwLDAsMTAuNjU5LTEuMDNBMTMuNTMzLDEzLjUzMywwLDAsMSw1MjAuNDU3LDE1MzMuNTFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDczIC0xNDkzKSIvPjwvc3ZnPg==)
+    background-size: 58px 64px
+    background-repeat: no-repeat
+    background-position: top 15px left 25px
+
+.lk-profile-settings
+    width: 400px
+    max-width: 100%
+
+.lk-profile-settings__header
+    display: flex
+    align-items: center
+    margin-bottom: 12px
+
+    h2
+        font-size: 21px
+        font-weight: 600
+
+    span
+        font-size: 15px
+        font-weight: 400
+        margin-left: 20px
+        color: $blue
+        border-bottom: 1px solid $blue
+        cursor: pointer
+
+.lk-profile-settings-item
+    margin-bottom: 15px
+    width: 78%
+
+    &:last-child
+        margin-bottom: 0
+
+    h3
+        font-size: 15px
+        font-weight: 600
+        margin-bottom: 10px
+
+.lk-profile-settings-access
+    width: 100%
+
+.lk-profile-settings-access-item
+    margin-bottom: 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &:last-child
+        margin-bottom: 0
+
+.lk-profile-settings-access__user
+    font-size: 15px
+    color: #505050
+    font-weight: 400
+    margin-left: 15px
+
+.lk-profile-settings-access__edit
+    span
+        color: $blue
+        font-size: 15px
+        font-weight: 400
+        border-bottom: 1px solid $blue
+
+.lk-profile-settings-item__block
+    display: flex
+    align-items: baseline
+    justify-content: space-between
+    margin-bottom: 8px
+
+    &:last-child
+        margin-bottom: 0
+
+.lk-profile-settings-item__block-type
+    color: #505050
+    font-size: 15px
+    font-weight: 400
+
+.lk-profile-settings-item__block-line
+    height: 1px
+    flex: 1
+    border-bottom: 2px dashed #e9ebef
+    margin: 0 10px
+
+.lk-profile-settings-item__block-checkbox
+    width: 14px
+    height: 14px
+
+    label
+        position: relative
+        cursor: pointer
+
+.input-checkbox
+    opacity: 0
+    display: none
+
+    & + label::before
+        content: ""
+        position: absolute
+        height: 15px
+        width: 15px
+        top: 1px
+        right: 0
+        bottom: 0
+        left: 0
+        border: 1px solid #95a1b8
+        border-radius: 3px
+
+    &:checked
+        & + label::after
+            width: 10px
+            height: 11px
+            content: ""
+            position: absolute
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAABfElEQVQ4ja3Tv0tXURzG8VcpQT+gIQSHnDSCggaHFoeWEKFE0EGMBnFoaIsCERx0EFqixCVIHKQfCJmIBSHi0OC/0j8gDZEoBz4XTvfer+L3e5/tPPec9/O55z73Qv/UBw2rD6uYxu+LDcNvYh/D2ENPkwG9AR2I9R18ayqgJ+C3M+8Qs00E3Aj43cz7g0c46DTgOnZxrwQfw6+06CSggA9m3l9MxBvpJOAafuB+DfxnvrGdgCv4jqHM+4ep8P/TeQMuYxsPMu8IT1MlK7uzgHSf72K6VroUkIcl+Aw2WpzRjatxn0NRtbFoQq4E/4qRzDvGM6xXqKU32MruM023GcB8iM8YLcGfY61CrAlYiQYUGslCuvAx2pHrBd5XaDVKATt4Ek0o9BhfYsLJ0rFXWK6i6tUd7mY04VNMnTRec2IebyruKcpruhGNOGqxfRFLFfcMlf+D9WjGccl/jYXzwpPqfrR076khRchbzLUDTyq+QVmpIenZLbxsFw4nKV5AS5UAqdIAAAAASUVORK5CYII=)
+            top: 2px
+            left: 3px
+            background-position: center
+            background-size: contain
+            background-repeat: no-repeat
+
+//Modals
+.payers-form-modal__content
+    max-width: 100%
+    background: #fff
+    border: 1px solid #c7ccd6
+    border-radius: 3px
+    padding: 25px 40px 25px 20px
+
+.lk-personal-form__title
+    font-size: 22px
+    font-weight: 600
+    text-align: center
+    margin-bottom: 20px
+
+.lk-personal-form__item + .lk-personal-form__item
+    margin-top: 15px
+
+.lk-personal-form__social-block
+    margin-top: 30px
+
+    .lk-personal-form__item + .lk-personal-form__item
+        margin-top: 8px
+
+    .form-group
+        position: relative
+
+        .social-icon
+            position: absolute
+            top: 8px
+            left: 5px
+            display: flex
+
+        .input-style
+            padding-left: 45px
+
+.lk-personal-form__social-helper
+    color: #505050
+    font-size: 13px
+    font-weight: 400
+
+.lk-personal-form__actions
+    margin-top: 28px
+    display: flex
+    align-items: center
+
+.lk-personal-form__action
+    flex: 1
+
+    .btn
+        min-width: 0
+        width: 100%
+
+.lk-personal-form__action + .lk-personal-form__action
+    margin-left: 10px
+
+//Payers
+.lk-profile-payers-form__item-wrap
+    display: flex
+    align-items: center
+
+.lk-profile-payers-form__item + .lk-profile-payers-form__item
+    margin-top: 15px
+
+.lk-profile-payers-form__item-title
+    flex: 0 0 190px
+    margin-right: 15px
+    text-align: right
+    font-weight: 400
+
+.lk-profile-payers-form__item-control
+    flex: 1
+
+    .input-style
+        height: 36px
+        padding: 8px 30px 8px 10px
+
+    .vue-treeselect__indent-level-0 .vue-treeselect__option
+        padding-left: 5px
+
+    .vue-treeselect__placeholder, .vue-treeselect__single-value
+        line-height: 37px
+
+    .vue-treeselect__control
+        height: 37px
+        border-radius: 3px
+        border: 1px solid #c7ccd6
+
+//Avatar
+.user-avatar-uploader__title
+    font-size: 22px
+    font-weight: 600
+    text-align: center
+    margin-bottom: 20px
+
+.image-uploader
+    border: 1px dashed #c7ccd6
+    border-radius: 3px
+    height: 350px
+    padding: 15px 30px
+    display: flex
+    justify-content: center
+    display: flex
+    flex-direction: column
+    text-align: center
+    align-items: center
+    justify-content: center
+
+    &.dragging
+        border: 1px dashed #3b5998
+
+.image-uploader-empty-actions
+    p
+        color: #abb5c9
+        font-weight: 600
+
+    label
+        display: inline-block
+
+.input-file
+    opacity: 0
+    display: none
+
+.button-upload
+    margin-top: 15px
+    margin-left: auto
+    margin-right: auto
+
+.image-preview
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+    img
+        display: block
+        max-width: 100%
+
+.image-uploader__actions
+    margin-top: 20px
+    display: flex
+    align-items: center
+
+.image-uploader__action
+    flex: 1
+
+    .btn
+        min-width: 0
+        width: 100%
+
+.image-uploader__action + .image-uploader__action
+    margin-left: 10px
+
+.cropping-rotate__actions
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 10px
+
+.cropping-rotate__action
+    display: flex
+    align-items: center
+    border-radius: 3px
+    padding: 8px 18px
+    background: #e8ecf4
+    font-weight: 600
+    color: $blue
+    cursor: pointer
+
+    .icon
+        display: flex
+        margin-right: 7px
+
+.cropping-rotate__action + .cropping-rotate__action
+    margin-left: 10px
+
+@media only screen and (max-width: 767px)
+    .lk-profile-user__header
+        flex-direction: column
+        align-items: flex-start
+
+    .lk-profile-user__img
+        margin-bottom: 15px
+        height: auto
+
+    .lk-profile-user__header div
+        margin-left: 0
+        margin-top: 10px
+
+    .lk-profile-user-item
+        flex-direction: column
+        align-items: flex-start
+
+    .lk-profile-user-item__text
+        margin-top: 10px
+        margin-left: 10px
+        padding: 0
+
+    .lk-profile-user-item__title
+        padding: 0
+
+    .lk-profile-settings-access__user
+        margin-left: 0
+        flex: 0 0 60%
+
+    .lk-profile-settings-access-item
+        align-items: flex-start
+
+    .lk-profile-settings-item
+        width: 100%
+
+    .lk-profile-settings__header
+        flex-direction: column
+        align-items: flex-start
+
+        span
+            margin-left: 0
+            margin-top: 10px
+
+    .lk-profile-payers-form__item-wrap
+        flex-direction: column
+        align-items: flex-start
+
+    .lk-profile-payers-form__item-title
+        flex: 0 0 100%
+        margin-right: 0
+        margin-bottom: 10px
+
+    .lk-profile-payers-form__item-control
+        width: 100%
+
+    .payers-form-modal__content
+        padding: 20px 10px

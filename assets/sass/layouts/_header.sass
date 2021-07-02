@@ -1,0 +1,194 @@
+@import "../vars"
+body.body-open
+    .overlay
+        display: block
+        z-index: 99
+        background: rgba(#000, .6)
+
+    .header
+        position: relative
+
+.myPopup-open
+    display: block !important
+
+.call
+    color: #fff
+    font-size: 14px
+    font-weight: 400
+
+    a
+        font-weight: 600
+
+.overlay
+    display: none
+    position: fixed
+    top: -100%
+    bottom: -100%
+    left: -100%
+    right: -100%
+
+.overlay-open
+    display: block
+    z-index: 99
+    background: rgba(#000, .6)
+
+.header
+    background: $blue
+    z-index: 100
+
+.header-open
+    position: relative
+
+.header-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 5px 0
+    font-size: 14px
+    font-weight: 400
+
+    a
+        color: #fff
+        box-sizing: content-box
+
+.logo
+    display: flex
+
+    a
+        display: flex
+
+        img, svg
+            vertical-align: top
+            max-height: 44px
+
+    .exit-from-demo
+        display: flex
+        font-size: 14px
+        color: #fff
+        border: 1px solid #6581BF
+        border-radius: 3px
+        padding: 4px 8px
+        margin-left: 10px
+
+.header__actives
+    display: flex
+    align-items: center
+
+.header__active
+    width: 30px
+    height: 30px
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #6583bf
+    border-radius: 3px
+
+    span
+        display: flex
+
+.header__active + .header__active
+    margin-left: 8px
+
+.header-info
+    display: flex
+    justify-content: space-between
+
+.header-info__item
+    margin-right: 30px
+
+    &:last-child
+        margin-right: 0
+
+.header__phone
+    .tel
+        font-weight: 600
+        font-size: 16px
+
+    .text
+        font-size: 14px
+        font-weight: 400
+
+.header-nav
+    margin: 20px 0
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    position: relative
+
+    a
+        color: #fff
+
+.nav-logo
+    margin-right: 20px
+
+    a
+        display: inline-block
+        height: 44px
+
+    img
+        height: 100%
+        vertical-align: top
+        max-width: 100%
+
+.hamburger-outer
+    position: relative
+    display: inline-block
+    margin-right: 8px
+
+.hamburger-inner
+    width: 18px
+    height: 18px
+
+.hamburger__bar
+    width: 12px
+    display: block
+    height: 1px
+    background: #fff
+    margin-bottom: 2px
+    transition: all .25s ease
+
+    &:last-child
+        margin-bottom: 0
+
+.hamburger--emphatic
+    overflow: hidden
+
+.hamburger--emphatic.category-btn__active
+    .hamburger__bar
+        position: relative
+        opacity: 1
+        background: #fff
+        margin-bottom: -1px
+
+    .hamburger__bar1
+        opacity: 0
+
+    .hamburger__bar2
+        opacity: 0
+
+    .hamburger__bar3
+        transform: rotate(45deg)
+
+    .hamburger__bar4
+        transform: rotate(-45deg)
+
+.w-100
+    width: 100% !important
+    display: none
+
+@media only screen and (max-width: 767px)
+    .call
+        span
+            display: none
+    .header-top
+        padding: 8px 0
+    .logo
+        display: block
+    .logo a img
+        max-height: 24px
+    .logo .exit-from-demo
+        margin-left: 0
+        padding: 2px
+        margin-top: 4px
+
+

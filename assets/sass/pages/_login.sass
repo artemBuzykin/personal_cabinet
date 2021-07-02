@@ -1,0 +1,114 @@
+//Lk-register
+@import ../vars
+
+.lk-register
+    background-image: url(~assets/img/regbg.jpg)
+    min-height: 700px
+
+.lk-register-wrap
+    padding-top: 80px
+    padding-bottom: 80px
+
+.lk-register-text
+    color: #fff
+
+    h1
+        font-size: 46px
+        font-weight: 400
+        margin-bottom: 5px
+
+    p
+        font-size: 20px
+        font-weight: 400
+
+    ul
+        margin-top: 20px
+
+        li
+            font-size: 20px
+            font-weight: 400
+            margin-left: 13px
+            position: relative
+            margin-bottom: 6px
+
+            &::before
+                position: absolute
+                content: ""
+                background: #fff
+                left: -13px
+                top: 12px
+                width: 6px
+                height: 6px
+                border-radius: 50%
+                display: inline-block
+
+.lk-register-form
+    margin-top: 20px
+    margin-right: 20px
+    margin-left: 85px
+    background: #fff
+    border-radius: 3px
+    padding: 40px 30px
+
+.lk-register-form__title
+    font-size: 22px
+    text-align: center
+    font-weight: 600
+    padding-bottom: 20px
+
+.form-register__choose
+    p
+        font-size: 14px
+
+.form-register__active
+    display: flex
+    margin-top: 15px
+
+.form-register__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 8px 25px
+    color: #6c6c6c
+    border-radius: 3px
+    font-weight: 400
+    font-size: 14px
+    background: #fff
+    border: 1px solid #c7ccd6
+
+    &:first-child
+        border-radius: 3px 0 0 3px
+
+    &:last-child
+        border-radius: 0 3px 3px 0
+
+    &.active
+        border: 1px solid transparent
+        color: $blue
+        background: #e8ecf4
+
+.lk-register-form .form-register__submit
+    .btn
+        width: 100%
+
+@media only screen and (max-width: 1199px)
+    .lk-register-text h1
+        font-size: 38px
+
+    .lk-register-form
+        margin-left: 0
+        margin-right: 0
+        padding: 25px 15px
+
+@media only screen and (max-width: 767px)
+    .lk-register-wrap
+        padding-top: 60px
+
+    .lk-register-text h1
+        font-size: 26px
+
+    .lk-register-text p
+        font-size: 18px
+
+    .lk-register-text ul li
+        font-size: 18px

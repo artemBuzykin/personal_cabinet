@@ -1,0 +1,264 @@
+.lk
+  background: #f7f7f7
+  padding-top: 60px
+.title-h1
+  color: $main
+  font-weight: 600
+  font-size: 26px
+  margin-bottom: 0
+.title-space
+  display: flex
+  align-items: center
+  justify-content: space-between
+.lk-title
+  padding-bottom: 30px
+  a
+    font-weight: 400
+    font-size: 14px
+    color: $main
+    span
+      border-bottom: 1px solid $main
+.lk-navigation-mobile
+  display: none
+.lk-page-content
+    background: #fff
+    padding: 40px 20px 90px 20px
+.lk-nav
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background: #fff
+  padding-bottom: 10px
+.lk-nav__link
+  display: flex
+  flex: 1 0 auto
+  align-items: center
+  justify-content: center
+  background: #fff
+  padding: 12px 20px
+  color: $main
+  font-weight: 600
+  border-right: 5px solid #f7f7f7
+  border-bottom: 5px solid #f7f7f7
+  position: relative
+  font-size: 17px
+  &.active
+    border-bottom-color: #fff
+    color: $main
+    &::after
+      position: absolute
+      content: ""
+      width: 5px
+      height: 5px
+      background: #f7f7f7
+      bottom: -5px
+      right: -5px
+  &:last-child
+    border-right: none
+.lk-content
+  padding-bottom: 100px
+  overflow-x: hidden
+.mobile-menu-btn
+  display: none
+
+//Lk-BANNER
+.lk-banner-cont
+  position: relative
+.lk-banner
+  background-color: #4f7ee3
+  min-height: 250px
+  color: #fff
+  overflow: hidden
+  background-repeat: no-repeat
+  background-size: 350px 327px
+  background-position: top 5px right 115px
+  padding: 40px 70px
+.lk-bonuses
+  .lk-banner
+    background-size: 480px 303px
+    background-position: top 10px right 5px
+.lk-profile
+  .lk-banner
+    background-position: top 33px right 100px
+.lk-equipment
+  .lk-banner
+    background-size: 327px 294px
+    background-position: top 33px right 65px
+.lk-banner__wrap
+  // max-width: 560px
+  h2
+    font-size: 26px
+    font-weight: 400
+    padding-bottom: 10px
+  p
+    padding-bottom: 10px
+    font-size: 15px
+    font-weight: 600
+    position: relative
+    margin-left: 10px
+    &::before
+      position: absolute
+      top: 0
+      content: "-"
+      left: -10px
+      width: 6px
+      height: 100%
+.lk-banner__toggle
+  font-size: 14px
+  font-weight: 400
+  position: absolute
+  top: 5px
+  right: 20px
+  >div
+    display: flex
+    align-items: center
+    cursor: pointer
+    color: #b9caef
+    svg
+      fill: #b9caef
+    .arrow
+      transform: rotate(-180deg)
+      margin-top: 5px
+      display: inline-block
+    .text
+      border-bottom: 1px solid transparent
+    &.banner-open
+      color: #898989
+      svg
+        fill: #898989
+      .arrow
+        transform: rotate(0)
+        margin-top: 0
+      .text
+        border-bottom: 1px solid #898989
+.delete, .close
+  position: absolute
+  top: 8px
+  right: 8px
+  width: 10px
+  height: 10px
+  cursor: pointer
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0ieCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTEuOTEiIGhlaWdodD0iMTEuOTA2IiB2aWV3Qm94PSIwIDAgMTEuOTEgMTEuOTA2Ij4gIDxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICNjN2NjZDY7ICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPHBhdGggaWQ9ItCf0YDRj9C80L7Rg9Cz0L7Qu9GM0L3QuNC6X9GB0LrRgNGD0LPQuy5f0YPQs9C70YtfMSIgZGF0YS1uYW1lPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQuiwg0YHQutGA0YPQs9C7LiDRg9Cz0LvRiyAxIiBjbGFzcz0iY2xzLTEiIGQ9Ik0xMTQxLjAxLDUyMi40MjNsOS42Myw5LjYzMWExLjEzMywxLjEzMywwLDEsMS0xLjYsMS42bC05LjYzLTkuNjNhMS4xNDEsMS4xNDEsMCwwLDEsMC0xLjYwNUExLjEyOSwxLjEyOSwwLDAsMSwxMTQxLjAxLDUyMi40MjNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEzOS4wOSAtNTIyLjA5NCkiLz4gIDxwYXRoIGlkPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQul/RgdC60YDRg9Cz0LsuX9GD0LPQu9GLXzFf0LrQvtC/0LjRjyIgZGF0YS1uYW1lPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQuiwg0YHQutGA0YPQs9C7LiDRg9Cz0LvRiyAxINC60L7Qv9C40Y8iIGNsYXNzPSJjbHMtMSIgZD0iTTExNTAuNjQsNTIyLjQyM2ExLjEyMywxLjEyMywwLDAsMSwwLDEuNjA1bC05LjYzLDkuNjNhMS4xMjcsMS4xMjcsMCwwLDEtMS42LDAsMS4xNCwxLjE0LDAsMCwxLDAtMS42bDkuNjMtOS42MzFBMS4xMjksMS4xMjksMCwwLDEsMTE1MC42NCw1MjIuNDIzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExMzkuMDkgLTUyMi4wOTQpIi8+PC9zdmc+)
+  &.blue
+      background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0ieCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTEuOTEiIGhlaWdodD0iMTEuOTA2IiB2aWV3Qm94PSIwIDAgMTEuOTEgMTEuOTA2Ij4gIDxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICMzYjU5OTg7ICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPHBhdGggaWQ9ItCf0YDRj9C80L7Rg9Cz0L7Qu9GM0L3QuNC6X9GB0LrRgNGD0LPQuy5f0YPQs9C70YtfMSIgZGF0YS1uYW1lPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQuiwg0YHQutGA0YPQs9C7LiDRg9Cz0LvRiyAxIiBjbGFzcz0iY2xzLTEiIGQ9Ik0xMTQxLjAxLDUyMi40MjNsOS42Myw5LjYzMWExLjEzMywxLjEzMywwLDEsMS0xLjYsMS42bC05LjYzLTkuNjNhMS4xNDEsMS4xNDEsMCwwLDEsMC0xLjYwNUExLjEyOSwxLjEyOSwwLDAsMSwxMTQxLjAxLDUyMi40MjNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEzOS4wOSAtNTIyLjA5NCkiLz4gIDxwYXRoIGlkPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQul/RgdC60YDRg9Cz0LsuX9GD0LPQu9GLXzFf0LrQvtC/0LjRjyIgZGF0YS1uYW1lPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQuiwg0YHQutGA0YPQs9C7LiDRg9Cz0LvRiyAxINC60L7Qv9C40Y8iIGNsYXNzPSJjbHMtMSIgZD0iTTExNTAuNjQsNTIyLjQyM2ExLjEyMywxLjEyMywwLDAsMSwwLDEuNjA1bC05LjYzLDkuNjNhMS4xMjcsMS4xMjcsMCwwLDEtMS42LDAsMS4xNCwxLjE0LDAsMCwxLDAtMS42bDkuNjMtOS42MzFBMS4xMjksMS4xMjksMCwwLDEsMTE1MC42NCw1MjIuNDIzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExMzkuMDkgLTUyMi4wOTQpIi8+PC9zdmc+')
+@media only screen and (max-width : 1199px)
+  .lk-banner
+    padding: 30px 25px
+    min-height: 230px
+    background-size: 300px 256px
+    background-position: top 25px  right  -30px
+  .lk-banner__wrap
+    max-width: 80%
+  .lk-equipment-block__item-descr
+    padding: 0 25px 0 12px
+  .lk-equipment .lk-banner
+    background-position: top 33px right -35px
+  .lk-bonuses .lk-banner
+    background-position: top 45px right -230px
+  .lk-profile .lk-banner
+    background-position: top 43px right
+    background-size: 223px 217px
+  .lk-banner__wrap p
+    font-size: 14px
+  .lk-nav__link
+    padding: 12px 0
+    font-size: 14px
+@media only screen and (max-width : 767px)
+  .lk-page-content
+    padding: 30px 10px 90px 10px
+  .mobile-menu-btn
+    display: flex
+    width: 36px
+    height: 36px
+    justify-content: center
+    align-items: center
+    border-radius: 3px
+    border: 1px solid #c7ccd6
+    span
+      display: inline-block
+      height: 2px
+      width: 20px
+      background: $blue
+      position: relative
+      &::before, &::after
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        width: 20px
+        height: 2px
+        background: $blue
+      &::before
+        top: -5px
+      &::after
+        top: 5px
+  .title-h1
+    font-size: 22px
+  .lk-navigation
+    overflow: hidden
+    position: fixed
+    left: -100%
+    transition: all .5s ease-out
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    width: 100vw
+    background: #ffffff
+    height: 100vh
+    z-index: 999
+    .container
+      padding: 0
+      z-index: 1000
+      .lk-navigation-mobile
+        display: block
+      .lk-navigation-mobile__header
+        height: 40px
+        background: $blue
+        display: flex
+        align-items: center
+        position: relative
+      .mobile-menu-close
+        margin-left: auto
+        margin-right: 15px
+        right: 20px
+        width: 24px
+        height: 24px
+        cursor: pointer
+        &::before, &::after
+          content: ""
+          position: absolute
+          top: calc(50% - 1px)
+          width: 24px
+          height: 2px
+          background: #fff
+          display: inline-block
+          border-radius: 5px
+        &::before
+          transform: rotate(45deg)
+        &::after
+          transform: rotate(-45deg)
+      .lk-nav
+        flex-direction: column
+        align-items: flex-start
+        padding-bottom: 0
+      .lk-nav__link
+        width: 100%
+        justify-content: flex-start
+        border-bottom: 1px solid #c7ccd6
+        padding: 12px 10px
+        color: $blue
+        margin: 0
+        border-right: none
+        &::after
+          display: none
+        &.active
+          color: #262626
+    &.mobileMenu
+      left: 0
+  .lk-content .container
+    padding-left: 0
+    padding-right: 0

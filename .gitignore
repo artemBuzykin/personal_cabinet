@@ -1,0 +1,15 @@
+/node_modules
+.env
+npm-debug.log
+yarn-error.log
+.nuxt
+/dist
+/public/_nuxt
+*.code-workspace
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.DS_Store

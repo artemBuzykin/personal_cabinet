@@ -1,0 +1,156 @@
+//FOOTER
+@import "../vars"
+.footer
+  background: $blue
+  padding-top: 60px
+  font-weight: 400
+.footer-wrap
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid rgba(240,240,240,.1)
+  padding-bottom: 40px
+.footer-nav
+  vertical-align: top
+  margin-right: 30px
+  display: inline-block
+  li
+    display: block
+    margin-bottom: 5px
+    font-size: 14px
+    &:last-child
+      margin-bottom: 0
+    &.active, &:first-child
+      font-weight: 400
+      color: #fff
+      a
+        color: inherit
+    a
+      color: #ced6e9
+.footer-text
+  flex: 0 0 40%
+.footer-info__public
+  padding: 20px 0
+  font-size: 14px
+  color: #ced6e9
+.footer-info__important
+  display: flex
+  flex-direction: column
+  li
+    display: inline-block
+    margin-bottom: 5px
+    &:last-child
+      margin-bottom: 0
+    a
+      color: #fff
+      border-bottom: 1px solid #fff
+      font-size: 14px
+.footer-cookie
+  color: #ced6e9
+  padding-bottom: 20px
+  font-size: 13px
+  a
+    color: #fff
+    font-weight: 400
+.footer-bottom
+  padding: 25px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  p
+    color: #ced6e9
+    font-size: 13px
+    font-weight: 400
+.social
+  display: flex
+  align-items: center
+  li
+    margin-right: 10px
+    display: flex
+    &:last-child
+      margin-right: 0
+    a
+      display: flex
+      svg
+        vertical-align: top
+        transition: all .25s ease
+        &:hover
+          fill: #ebebeb
+      span
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: 28px 28px
+        display: inline-block
+        width: 28px
+        height: 28px
+        &.inst
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAyOCAyOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij4gICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwtMTQ4MiwtNTI0KSI+ICAgICAgICA8cGF0aCBpZD0iaW5zdCIgZD0iTTE0ODIsNTUyTDE0ODIsNTI0TDE1MTAsNTI0TDE1MTAsNTUyTDE0ODIsNTUyWk0xNTA2LDUzNEMxNTA2LDUzMS4zNTkgMTUwMy42NCw1MjggMTUwMSw1MjhMMTQ5MSw1MjhDMTQ4OC4zNiw1MjggMTQ4Niw1MzEuMzU5IDE0ODYsNTM0TDE0ODYsNTQzQzE0ODYsNTQ1LjY0MyAxNDg4LjM2LDU0OCAxNDkxLDU0OEwxNTAxLDU0OEMxNTAzLjY0LDU0OCAxNTA2LDU0NS42NDMgMTUwNiw1NDNMMTUwNiw1MzRaTTE1MDAuNyw1NDUuNDY5TDE0OTEuMjksNTQ1LjQ2OUMxNDg5Ljc5LDU0NS40NjkgMTQ4OC41Nyw1NDQuMjQ2IDE0ODguNTcsNTQyLjc0M0wxNDg4LjU3LDUzMy4zMzVDMTQ4OC41Nyw1MzEuODMzIDE0ODkuNzksNTMwLjYxMiAxNDkxLjI5LDUzMC42MTJMMTUwMC43LDUzMC42MTJDMTUwMi4yLDUzMC42MTIgMTUwMy40Myw1MzEuODMzIDE1MDMuNDMsNTMzLjMzNUwxNTAzLjQzLDU0Mi43NDNDMTUwMy40Myw1NDQuMjQ2IDE1MDIuMiw1NDUuNDY5IDE1MDAuNyw1NDUuNDY5Wk0xNDk2LDUzMy4xNDhDMTQ5My4zLDUzMy4xNDggMTQ5MS4xMSw1MzUuMzQzIDE0OTEuMTEsNTM4LjA0QzE0OTEuMTEsNTQwLjczNiAxNDkzLjMsNTQyLjkzMSAxNDk2LDU0Mi45MzFDMTQ5OC42OSw1NDIuOTMxIDE1MDAuODksNTQwLjczNiAxNTAwLjg5LDUzOC4wNEMxNTAwLjg5LDUzNS4zNDMgMTQ5OC42OSw1MzMuMTQ4IDE0OTYsNTMzLjE0OFpNMTUwMS4wNSw1MzEuODQ1QzE1MDAuNDEsNTMxLjg0NSAxNDk5Ljg5LDUzMi4zNjUgMTQ5OS44OSw1MzMuMDAyQzE0OTkuODksNTMzLjY0MSAxNTAwLjQxLDUzNC4xNiAxNTAxLjA1LDUzNC4xNkMxNTAxLjY4LDUzNC4xNiAxNTAyLjIsNTMzLjY0MSAxNTAyLjIsNTMzLjAwMkMxNTAyLjIsNTMyLjM2NSAxNTAxLjY4LDUzMS44NDUgMTUwMS4wNSw1MzEuODQ1Wk0xNDk2LDU0MC44NjRDMTQ5NC40NCw1NDAuODY0IDE0OTMuMTcsNTM5LjU5NyAxNDkzLjE3LDUzOC4wNEMxNDkzLjE3LDUzNi40ODIgMTQ5NC40NCw1MzUuMjE2IDE0OTYsNTM1LjIxNkMxNDk3LjU1LDUzNS4yMTYgMTQ5OC44Miw1MzYuNDg0IDE0OTguODIsNTM4LjA0QzE0OTguODIsNTM5LjU5NyAxNDk3LjU1LDU0MC44NjQgMTQ5Niw1NDAuODY0WiIgc3R5bGU9ImZpbGw6cmdiKDIwNSwyMTMsMjMzKTsiLz4gICAgPC9nPjwvc3ZnPg==)
+.footer-social
+  flex-basis: 20%
+  margin-left: 30px
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  li
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+    a
+      display: inline-block
+      svg
+        vertical-align: top
+        transition: all .25s ease
+        &:hover
+          fill: #ebebeb
+@media only screen and (max-width: 1200px)
+  .footer-nav
+    flex: 1
+    margin-right: 0
+    text-align: center
+  .footer-menu
+    display: flex
+    justify-content: space-between
+    min-width: 100%
+  .footer-wrap
+    justify-content: flex-start
+    flex-wrap: wrap
+    display: block
+  .footer-text
+    padding-bottom: 45px
+    display: flex
+    justify-content: space-around
+    width: initial
+    >div
+      width: 440px
+      &:first-child
+        margin-right: 40px
+  .footer
+    padding-top: 40px
+@media only screen and (max-width: 767px)
+  .footer-wrap
+    display: flex
+    align-items: center
+    text-align: center
+    flex-direction: column
+  .footer-text
+    flex-direction: column
+    padding-bottom: 0
+  .footer-social
+    margin-left: 0
+    margin-bottom: 10px
+  .footer-text
+    >div
+      width: initial
+      &:first-child
+        margin-right: 0
+  .footer-menu
+    flex-direction: column
+    padding-bottom: 20px
+  .footer-nav
+    margin-bottom: 10px
+  .footer-bottom
+    flex-direction: column-reverse
+    align-items: center
+    justify-content: flex-start
+    text-align: center
+    p
+      padding-top: 15px

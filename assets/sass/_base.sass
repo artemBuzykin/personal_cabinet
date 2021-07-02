@@ -1,0 +1,351 @@
+*::-webkit-input-placeholder, select
+    color: #aaaaaa
+    opacity: 1
+
+*:focus
+    outline: none
+    box-shadow: none
+
+*:-moz-placeholder, select
+    color: #aaaaaa
+    opacity: 1
+
+*::-moz-placeholder, select
+    color: #aaaaaa
+    opacity: 1
+
+*:-ms-input-placeholder, select
+    color: #aaaaaa
+    opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: #666
+
+body input:required:valid,
+body textarea:required:valid
+    color: #666
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html, body
+    height: 100%
+
+    // overflow: hidden
+
+body
+    font-size: 16px
+    min-width: 320px
+    position: relative
+    line-height: 1.4
+    overflow-x: hidden
+    font-family: $default-font
+    font-weight: 300
+    opacity: 1
+    color: $main
+    background: #fff
+
+strong
+    font-weight: 600
+
+a, a:focus, a:visited, a:hover, a:link, a:active
+    text-decoration: none
+    color: #495b80
+
+a.btn, .btn
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    background: $blue
+    transition: all 0.75s ease
+    cursor: pointer
+    min-height: 44px
+    padding: 10px
+    border: 1px solid transparent
+    font-weight: 400
+    color: #fff
+    border-radius: 3px
+    min-width: 220px
+    outline: none
+
+    &:hover, &:focus
+        background: #355DD6
+        border: 1px solid transparent
+
+a.btn-rev, .btn-rev
+    background: #fff
+    color: $blue
+    border-color: $blue
+
+    &:hover, &:focus, &.active
+        background: $blue
+        color: #fff
+        border-color: $blue
+
+button
+    outline: none
+    border: none
+    background: transparent
+    box-shadow: none
+    cursor: pointer
+
+    &:focus, &:visited, &:active
+        outline: none
+        border: none
+        box-shadow: none
+
+.owl-dots
+    z-index: 2
+    text-align: center
+    margin-top: 5px
+
+h3
+    font-size: 21px
+    font-weight: 600
+
+.hidden
+    display: none
+
+.no-visible
+    display: none !important
+
+.title-h1
+    font-size: 26px
+    margin-bottom: 15px
+    color: $main
+    font-weight: 400
+
+.title
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .title-h1
+        font-weight: 600
+
+.w-100
+    width: 100% !important
+    display: none
+
+a.all-link
+    font-weight: 400
+    color: #515f7b
+    border-bottom: 1px solid #515f7b
+
+.all-link
+    margin-left: 20px
+    font-size: 15px
+
+.li-style
+    padding-bottom: 5px
+    position: relative
+    margin-left: 15px
+    color: $main
+
+    &:before
+        content: ""
+        display: inline-block
+        width: 6px
+        height: 6px
+        border-radius: 50%
+        background: $blue
+        position: absolute
+        top: 8px
+        left: -15px
+
+    &:last-child
+        padding-bottom: 10px
+
+.breadcrumbs-wrap
+    padding: 15px 0 10px 0
+
+.breadcrumb li
+    display: inline-block
+    font-size: 13px
+    color: #6c6c6c
+    font-weight: 400
+
+    a
+        color: #6c6c6c
+        font-weight: 400
+
+.breadcrumb li + li:before
+    content: ""
+
+    // background: url(../img/right-arrow.svg) no-repeat
+    width: 8px
+    height: 8px
+    background-size: cover
+    padding: 0
+    display: inline-block
+    margin-left: 2px
+    margin-right: 4px
+
+.row
+    margin-right: -10px
+    margin-left: -10px
+
+    [class*="col-"]
+        padding-left: 10px
+        padding-right: 10px
+
+a.input-btn, .input-btn
+    max-width: 320px
+    width: 100%
+    line-height: normal
+    vertical-align: middle
+    min-height: 44px
+    text-align: center
+    background: $blue
+    color: #fff
+    font-weight: 400
+    border-radius: 3px
+    transition: all 0.75s ease
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &:hover, &:focus
+        background: #355DD6
+
+.input-style
+    width: 100%
+    display: block
+    height: 44px
+    font-size: 15px
+    line-height: normal
+    vertical-align: middle
+    transition: border-color 0.3s ease
+    color: #505050
+    outline: none
+    border-radius: 3px
+    border: 1px solid #c7ccd6
+    padding: 10px 30px 10px 15px
+
+    &:focus
+        border-color: $blue
+
+.disabled
+    cursor: not-allowed
+    opacity: 0.8
+
+    &:hover, &:focus
+        background: $blue
+        border-color: transparent
+        opacity: 0.8
+
+//iframe-responsive
+.iframe-responsive
+    position: relative
+    display: block
+    width: 100%
+    padding: 0
+    overflow: hidden
+
+    &::before
+        display: block
+        content: ""
+
+.iframe-responsive-16by9
+    &::before
+        padding-top: 56%
+
+.iframe-responsive-item
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 0
+
+//Form
+.form-group
+    position: relative
+
+.form-group + .form-group
+    margin-top: 15px
+
+.form
+    display: flex
+    flex-direction: column
+    padding: 35px 30px
+    border: 1px solid #e2e9f2
+    border-radius: 3px
+
+    .help-place
+        position: absolute
+        pointer-events: none
+        font-size: 15px
+        left: 8px
+        top: 11px
+        background: transparent
+        overflow: hidden
+        padding: 0 8px
+        transform-origin: top center
+        text-overflow: ellipsis
+        transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1)
+
+    .input-btn
+        max-width: none
+
+.input-active .help-place
+    transform: scale(0.75) translateY(-26px) translateX(-14px)
+    background: #fff
+    color: #3b5998
+    font-weight: 400
+
+.invalid .input-style
+    border-color: #be2d34
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABHklEQVQ4jZXSuy5FQRTG8b8twnGpPIVSKzlCCOEFtCQKzXkcHd15AQoP4BpvoKHTIC6JE0r5cmbHZGbNZa9ubr+ZlW8mHpeW94Bj4B04AG7oVmvAKTAPHAl8AxYd8Q3sAleV5CZwBsy68XMDfHobdMsF0I+OxhViqg+B+8CoI2phX8ChwGvXZi2awmTcN27ishLNYbcaNN5CCd0oYSqlHLa06pA5b+5He4GZHBa+MPfSXg2WAn30N1oZX2RiOVA1Fc38n5mMZgugAjgP2myrZ6SfBVvMT3MUtG99KRO0MAWwBWxnvpQJprA2ACv9CG0qsbaKqMD1BLaT+Bo5dEXgMIHdGVgJPRE43RHLoQsCB8Ar8ODSrMF8VA94Al6AwR96Fl/p/266/wAAAABJRU5ErkJggg==")
+    background-position: calc(100% - 12px) 15px
+    background-size: 10px 10px
+    background-repeat: no-repeat
+
+.input-error
+    min-height: 21px
+
+.input-error small
+    display: none
+    padding-top: 6px
+    font-size: 12px
+    color: #be2d34
+
+.invalid .input-error small
+    display: block
+
+.valid .input-style
+    border-color: #23ad94
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAYAAADeiIy1AAABqElEQVRIibXUTaiNURTG8d+9ro+ULoObfHRHN0XplgEZmAhJSqKUfCQTBpSMpEwYMBFlQElKJiJKIh8TGZmQkpSJxMQAE0mJdtap13r3GTjn3Ge2n732+rfXXmsPuX3BFGkNDmEXfo5MEWQl7mIUw9gx3ArpX5N4EJCibbg6aNBSPMK85L8YJGgiIGPJP4GzgwKN4wkWJf80ToqH6lcLAzKe8pzHsc6iX9BYlGsi+ZdxpGn0A5obkGXJv4YD+D0I0Gi08GTyb2EffuUDvYBmxzCuSv497KxBmqAhnMLiVsS/mok78b009Rjby1fTOpFA53A8umd+K+qvZuAm1if/GbbgR+tEAp3B4Vgv6TJ003Adm5P/PLzvrcwV0PTkLU9/VYm5EqVp6hU24lsra0UlyVFcSlsrcB9zcBF70v4brMOXdsq6RqLfD2IW9jaiVuMtFqST7+KdPlczdlGnGQpsP26ksAz5EDf5WE/XXc05Kv2/O2akpk9Yi/eVvf8CiTkoj/4w+aVMG6JsPan2MxTYVjyN9deAvO4VUrtRR2UuNkWblxZ+2Q8E/gB3/UhjoFnPQwAAAABJRU5ErkJggg==")
+    background-position: calc(100% - 9px) 15px
+    background-size: 13px 11px
+    background-repeat: no-repeat
+
+.form-feedback__title
+    text-align: center
+    font-size: 21px
+    font-weight: 600
+    margin-bottom: 22px
+
+.main-block ~ .children-block
+    padding-bottom: 70px
+
+.main-block + .children-block
+    padding-top: 70px
+    padding-bottom: 70px
+
+//Modal Message
+.modal-wrapper
+    max-width: 100%
+    background: #fff
+    border: 1px solid #c7ccd6
+    border-radius: 3px
+    padding: 50px 35px 40px 35px
+
+@media only screen and (max-width: 767px)
+    .modal-wrapper
+        padding: 35px 15px 15px 15px
